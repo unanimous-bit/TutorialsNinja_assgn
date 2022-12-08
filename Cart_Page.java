@@ -57,26 +57,15 @@ public class Cart_Page {
 		 public void Screenshot( WebDriver driver) throws IOException  {
 				Date currentdate = new Date();
 				System.out.println("currentdate");
-				//modifying the date into string format
 				String screenshotfilename = ".//ssfolder//"+currentdate.toString().replace(" ", ",").replace(":", "-")+".png";
 				System.out.println(screenshotfilename);
 				//driver.get(checkout_from_cart);
-				//Convert web driver object to TakeScreenshot
+			  TakesScreenshot scrShot =((TakesScreenshot)driver);
+			 File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
+			 File DestFile=new File( screenshotfilename);
 
-		        TakesScreenshot scrShot =((TakesScreenshot)driver);
-
-		        //Call getScreenshotAs method to create image file
-
-		                File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
-
-		            //Move image file to new destination
-
-		                File DestFile=new File( screenshotfilename);
-
-		                //Copy file at destination
-
-		                FileUtils.copyFile(SrcFile, DestFile);
-		System.out.println("Screenshot taken\n");
+		        FileUtils.copyFile(SrcFile, DestFile);
+		         System.out.println("Screenshot taken\n");
 	}
 
 }
