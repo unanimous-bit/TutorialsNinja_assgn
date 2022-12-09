@@ -48,14 +48,14 @@ public class Registration_Ninja {
 		// TODO Auto-generated method stub
 		first_name.clear();
 		first_name.sendKeys(firstname);
-		System.out.println("Email is entered into testField\n");
+		System.out.println("firstname is entered into testField\n");
 	}
 	
 	public void setLast_Name(String lastname) {
 		// TODO Auto-generated method stub
 		last_name.clear();
 		last_name.sendKeys(lastname);
-		System.out.println("Email is entered into testField\n");
+		System.out.println("lastname is entered into testField\n");
 	}
 
 
@@ -63,7 +63,7 @@ public class Registration_Ninja {
 		// TODO Auto-generated method stub
 		emailID.clear();
 		emailID.sendKeys(useremail);
-		System.out.println("Email is entered into testField\n");
+		System.out.println("useremail is entered into testField\n");
 	}
 	public void setTelephone(String Telephone) {
 		// TODO Auto-generated method stub
