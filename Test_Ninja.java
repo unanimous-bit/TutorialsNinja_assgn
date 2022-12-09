@@ -158,6 +158,7 @@ public class Test_Ninja {
  @Test(priority = 6, enabled = true)
  public void Screenshot() throws IOException  {
 	cp.Screenshot(driver);
+        driver.quit();
 }
  
 }
